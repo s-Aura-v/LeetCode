@@ -1,0 +1,7 @@
+Problems
+1. I attempted to read every number without planning for some kind of filter to only test certain numbers
+
+Solution:
+1. Only start counting if the number has no left neighbor because then it is the start of the sequence.
+
+

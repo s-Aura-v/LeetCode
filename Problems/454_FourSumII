@@ -1,0 +1,9 @@
+1. I struggled with the entire idea
+Main Concept:
+Negative + Positive = 0
+
+Brute force is O(n^4) because you would check if every number + other number could be added into a number less than n.
+But it is very bad way to approach it.
+
+Optimal Solution:
+Find the sum of two sums and add it to the hashmap

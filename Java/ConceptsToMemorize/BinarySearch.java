@@ -1,5 +1,5 @@
 package ConceptsToMemorize;
-
+// Assuming it is sorted in ascending order
 public class BinarySearch {
     public int search(int[] nums, int target) {
         int left = 0;

@@ -1,0 +1,20 @@
+Could not solve
+
+Main Problems:
+1. Could not turn int back to char
+[ 0 - > a, 1 -> b, ..., 26 -> z)
+Solution:
+Use ASCII / Char Values
+a = 97, so finding the int value then adding 97 would help you get the char
+
+2. Moving the substring by a value of 2
+If abcd, after I did ab, I had a problem skipping b then going to c
+Solution:
+In the for loop, add by k instead of adding by 1.
+for (int i = 0; i < s.length(); i+=k)
+
+Lesson
+1. Instead of converting char to int and int to char, it might be easier to just use 'a' and use an operation
+i + 'a'
+vs
+int x = i + 97;

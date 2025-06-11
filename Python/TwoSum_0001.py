@@ -12,3 +12,4 @@ def two_sum(nums, target):
 print("Test Case 1:", two_sum([2, 7, 11, 15], 9))   # Expected: [0, 1]
 print("Test Case 2:", two_sum([3, 2, 4], 6))        # Expected: [1, 2]
 print("Test Case 3:", two_sum([3, 3], 6))           # Expected: [0, 1]
+

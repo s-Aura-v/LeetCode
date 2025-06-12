@@ -1,0 +1,21 @@
+def productExceptSelf(self, nums: List[int]) -> List[int]:
+  prefixNum = 1
+  postfixNum = 1
+  prefixProduct = []
+  postfixProduct = [1] * len(nums)  # Pre-fill so we can build in reverse
+  solution = []
+
+  # prefix
+  for num in nums:
+      prefixProduct.append(prefixNum)
+      prefixNum *= num
+  
+  # postfix
+  for i in range(len(nums) - 1, -1, -1):
+      postfixProduct[i] = postfixNum
+      postfixNum *= nums[i]
+
+  for i in range(len(nums)):
+      solution.append(prefixProduct[i] * postfixProduct[i])
+  
+  return solution
